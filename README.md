@@ -5,6 +5,7 @@
   <img alt="Streamable HTTP" src="https://img.shields.io/badge/transport-streamable%20HTTP-0d647f?style=flat-square">
   <img alt="No authentication" src="https://img.shields.io/badge/auth-none-0d647f?style=flat-square">
   <img alt="Read-only" src="https://img.shields.io/badge/tools-read--only-0d647f?style=flat-square">
+  <a href="https://m8ven.ai/mcp/gaplessly/mcp?s=readme"><img alt="M8ven Score" src="https://m8ven.ai/badge/mcp/gaplessly/mcp"></a>
 </p>
 
 An AI assistant connected to this server can find free appointment and table times at any business that takes bookings through [Gaplessly](https://gaplessly.com), and hand the guest a link to finish the booking themselves. It is one public endpoint for the whole platform, read-only, with no API key.
