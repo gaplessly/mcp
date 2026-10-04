@@ -78,5 +78,10 @@ No tool returns a timezone, on purpose. A model that sees a zone beside a time c
 
 - [Full documentation](https://gaplessly.com/docs/mcp)
 - [Connector terms](https://gaplessly.com/legal/ai-connector)
+- [Privacy policy](https://gaplessly.com/legal/privacy)
 - [Gaplessly API reference](https://gaplessly.com/docs) and the [CLI](https://github.com/gaplessly/cli), for reading your own business's data with an API key
 - Questions: [hello@gaplessly.com](mailto:hello@gaplessly.com)
+
+## License
+
+[MIT](LICENSE). The Gaplessly name and logo are not covered by it.
