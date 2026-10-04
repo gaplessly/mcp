@@ -8,7 +8,7 @@
   <a href="https://m8ven.ai/mcp/gaplessly/mcp?s=readme"><img alt="M8ven Score" src="https://m8ven.ai/badge/mcp/gaplessly/mcp"></a>
 </p>
 
-An AI assistant connected to this server can find free appointment and table times at any business that takes bookings through [Gaplessly](https://gaplessly.com), and hand the guest a link to finish the booking themselves. It is one public endpoint for the whole platform, read-only, with no API key.
+An AI assistant connected to this server can look up any business that takes bookings through [Gaplessly](https://gaplessly.com) and, where the business's plan includes AI booking, find its free appointment and table times and hand the guest a link to finish the booking themselves. Other businesses answer with their own booking page. It is one public endpoint for the whole platform, read-only, with no API key.
 
 ```
 https://gaplessly.com/api/mcp
@@ -57,6 +57,8 @@ Any other client that speaks streamable HTTP takes the same URL.
 | `find_table_times` | Free times at one restaurant or venue for one party size, over up to two weeks. |
 | `book_appointment` | Turns a chosen appointment time into a link the guest opens to finish booking. |
 | `book_table` | Turns a chosen table time into a link the guest opens to finish booking. |
+
+`get_venue` answers for every business. The two time searches and the two `book_` tools need the business's plan to include AI booking; for any other business they return its booking page and `liveTimes: false` instead of times.
 
 Every tool is read-only, including the two named `book_`: they return a link and write nothing. Ask the server itself for the authoritative definitions:
 
