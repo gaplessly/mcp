@@ -55,12 +55,12 @@ Any other client that speaks streamable HTTP takes the same URL.
 | `get_venue` | A venue's public booking profile: what it is, where, what can be booked, and the venue's own current time. Call this first. |
 | `find_appointment_times` | Free times at one venue for one service, over up to two weeks. For salons, clinics and studios. |
 | `find_table_times` | Free times at one restaurant or venue for one party size, over up to two weeks. |
-| `book_appointment` | Turns a chosen appointment time into a link the guest opens to finish booking. |
-| `book_table` | Turns a chosen table time into a link the guest opens to finish booking. |
+| `start_appointment_booking` | Turns a chosen appointment time into a link the guest opens to finish booking. |
+| `start_table_booking` | Turns a chosen table time into a link the guest opens to finish booking. |
 
-`get_venue` answers for every business. The two time searches and the two `book_` tools need the business's plan to include AI booking; for any other business they return its booking page and `liveTimes: false` instead of times.
+`get_venue` answers for every business. The two time searches and the two `start_` tools need the business's plan to include AI booking; for any other business they return its booking page and `liveTimes: false` instead of times.
 
-Every tool is read-only, including the two named `book_`: they return a link and write nothing. Ask the server itself for the authoritative definitions:
+Every tool is read-only, including the two named `start_`: they return a link and write nothing. Ask the server itself for the authoritative definitions:
 
 ```bash
 curl -s https://gaplessly.com/api/mcp \
