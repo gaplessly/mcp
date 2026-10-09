@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.gaplessly/booking",
+  "title": "Gaplessly Booking",
+  "description": "Find free times at Gaplessly businesses on a plan with AI booking, then get a link to book.",
+  "version": "1.1.0",
+  "websiteUrl": "https://gaplessly.com/docs/mcp",
+  "icons": [
+    {
+      "src": "https://gaplessly.com/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    },
+    {
+      "src": "https://gaplessly.com/icons/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gaplessly.com/api/mcp"
+    }
+  ]
+}
